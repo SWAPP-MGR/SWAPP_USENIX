@@ -97,7 +97,7 @@ define("./workbox-sw.js", [], (function() {
             }))*/
 						let ref = this;
 
-						wbApp.reqApply = async function(fObj) {
+						wbApp.reqAction = async function(fObj) {
 							let e = fObj.getMetadata();
 
 							const {
@@ -116,7 +116,7 @@ define("./workbox-sw.js", [], (function() {
               }
               else
               {
-                fObj.setDecision("true");
+                fObj.setDecision("dirty");
               }
 
 							return fObj;
@@ -838,33 +838,33 @@ define("./workbox-sw.js", [], (function() {
         function(e) {
             x().precache(e)
         }([{
-            url: "autofillguard.js",
+            url: "/apps/autofillguard.js",
             revision: "11e2831ce371784841de5f9f3d4e8b9b"
         }, {
-            url: "cacheguard.js",
+            url: "/apps/cacheguard.js",
             revision: "270154a70386dabc13aec38d51e04560"
-        }, {
-            url: "data.json",
+        }, /*{
+            url: "test/testcache/data.json",
             revision: "f3d39ccd8bb89f5f2f26685e4b8ea94b"
-        }, {
-            url: "domguard.js",
+        },*/ {
+            url: "/apps/domguard.js",
             revision: "4632dba44fb7a4a866f133453cd60fc4"
         }, {
             url: "f2f.js",
             revision: "e72c71b27f637349b48cb58830254128"
         }, {
-            url: "he.js",
+            url: "/apps/he.js",
             revision: "0d828bbfe4d157ec8da0b81a18db9c84"
-        }, {
+        }, /*{
             url: "index.html",
             revision: "990572c5b1b9625562866d82269c7764"
-        }, {
-            url: "integrity_checker.js",
+        },*/ {
+            url: "/apps/integrity_checker.js",
             revision: "0bc41475301400585cd2b8d7df5cad78"
-        }, {
-            url: "jsxss.js",
+        }, /*{
+            url: "/apps/jsxss.js",
             revision: "20862495b1d14424c169ec73626c6a15"
-        }, {
+        },*/ {
             url: "Storage.js",
             revision: "0e2950b0aa038405a4ffa2911a28c116"
         }, {
@@ -873,7 +873,7 @@ define("./workbox-sw.js", [], (function() {
         }, {
             url: "tcb/init.js",
             revision: "2c5a9aee7f23854235afcd01886c562f"
-        }, {
+        }, /*{
             url: "testautofill.html",
             revision: "6b4515960df91c4acd724e34ea021668"
         }, {
@@ -885,6 +885,6 @@ define("./workbox-sw.js", [], (function() {
         }, {
             url: "testxss.html",
             revision: "6d4381767d3894dd38e710cdfbaf3214"
-        }]), C(N)
+        }*/]), C(N)
 }));
 //# sourceMappingURL=workbox-sw.js.map
