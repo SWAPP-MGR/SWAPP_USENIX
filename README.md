@@ -3,7 +3,7 @@
 SWAPP is a centralized platform for both web developers and researchers to implement SW-based applications. 
 
 ## Note
-This is a pre-release version. Evaluation and testing code are still present, and will be removed upon public release. Certain naming conventions may be different from the paper's description. We are updating the source code correspondingly. Please report any bugs or issues to use, we will be happy to fix/improve SWAPP for the future release.
+This is a pre-release version. Evaluation and testing code are still present and will be removed upon public release. Certain naming conventions may be different from the paper's description. We are updating the source code correspondingly. Please report any bugs or issues to use, we will be happy to fix/improve SWAPP for the future release.
 
 ## Installation
 
